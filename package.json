@@ -1,0 +1,48 @@
+{
+  "name": "x-13arima-seats-bin",
+  "version": "1.1.26",
+  "description": "Binary wrapper for the US Census Bureau's X-13ARIMA-SEATS Seasonal Adjustment Program.",
+  "license": "MIT",
+  "repository": "jczerwinski/x-13arima-seats-bin",
+  "author": {
+    "name": "Jamie Czerwinski",
+    "email": "jamie.czerwinski@gmail.com"
+  },
+  "bin": {
+    "x13ashtml": "cli.js",
+    "x13ashtml.exe": "cli.js"
+  },
+  "scripts": {
+    "test": "npm run postinstall && xo && ava",
+    "postinstall": "node lib/install.js"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "files": [
+    "index.js",
+    "cli.js",
+    "lib"
+  ],
+  "keywords": [
+    "cli-app",
+    "cli",
+    "bin",
+    "binary",
+    "x-13",
+    "x-13-arima",
+    "x-13arima",
+    "x-12",
+    "x-12-arima",
+    "wrapper"
+  ],
+  "dependencies": {
+    "bin-wrapper": "^2.0.0",
+    "logalot": "^2.0.0"
+  },
+  "devDependencies": {
+    "ava": "*",
+    "bin-check": "^3.0.0",
+    "xo": "*"
+  }
+}
