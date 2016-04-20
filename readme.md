@@ -21,7 +21,7 @@ $ npm install --save x-13arima-seats-bin
 const execFile = require('child_process').execFile;
 const x13 = require('x-13arima-seats-bin');
 
-execFile(x13, ['inputFileName], (err, stdout) => {
+execFile(x13, ['inputFileName'], (err, stdout) => {
 	console.log(stdout);
 });
 ```
